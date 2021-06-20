@@ -87,4 +87,16 @@ if(pets > friendsPets){
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
+switch(mostPets){
+  case (pets <  friendsPets):
+  mostPets = friendsPets;
+  case (pets > friendsPets):
+  mostPets = pets;
+  case (pets === friendsPets):
+  mostPets = "You have as many pets as your friend.";
+  default:
+  console.log("There was an error. Please try again.")
+}
+console.log(mostPets)
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+luckyNumber? console.log("Adventures are great!"):  console.log("How about we stay hoime?");
